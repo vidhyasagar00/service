@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="125dp"
+    android:padding="25dp">
+
+    <TextView
+        android:id="@+id/textViewthreadCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonThreadStarter"
+        android:layout_below="@+id/textViewthreadCount"
+        android:text="start service"/>
+
+    <Button
+        android:id="@+id/buttonStopthread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonThreadStarter"
+        android:layout_marginTop="10dp"
+        android:text="stop service" />
+
+    <Button
+        android:id="@+id/buttonBindService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonStopthread"
+        android:layout_marginTop="10dp"
+        android:text="bind" />
+
+    <Button
+        android:id="@+id/buttonUnBindService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonBindService"
+        android:layout_marginTop="10dp"
+        android:text="UnBind" />
+
+    <Button
+        android:id="@+id/buttonGetRandomNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonUnBindService"
+        android:layout_marginTop="10dp"
+        android:text="get random number" />
+
+    <Button
+        android:id="@+id/notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonGetRandomNumber"
+        android:layout_marginTop="10dp"
+        android:text="notification" />
+</RelativeLayout>
